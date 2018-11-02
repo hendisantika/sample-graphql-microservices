@@ -80,6 +80,11 @@
             <artifactId>apollo-runtime</artifactId>
             <version>1.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.22</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
