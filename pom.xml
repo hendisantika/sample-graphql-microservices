@@ -7,9 +7,9 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>department-service</module>
         <module>discovery-service</module>
         <module>employee-service</module>
-        <module>department-service</module>
         <module>organization-service</module>
     </modules>
 
