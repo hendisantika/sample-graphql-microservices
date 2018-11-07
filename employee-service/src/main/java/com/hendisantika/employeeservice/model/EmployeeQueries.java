@@ -20,8 +20,8 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 @Generated("Apollo GraphQL")
-public final class EmployeesQuery implements Query<EmployeesQuery.Data, EmployeesQuery.Data, Operation.Variables> {
-    public static final String OPERATION_DEFINITION = "query EmployeesQuery {\n"
+public final class EmployeeQueries implements Query<EmployeeQueries.Data, EmployeeQueries.Data, Operation.Variables> {
+    public static final String OPERATION_DEFINITION = "query EmployeeQueries {\n"
             + "  employees {\n"
             + "    __typename\n"
             + "    name\n"
@@ -36,13 +36,13 @@ public final class EmployeesQuery implements Query<EmployeesQuery.Data, Employee
     public static final OperationName OPERATION_NAME = new OperationName() {
         @Override
         public String name() {
-            return "EmployeesQuery";
+            return "EmployeeQueries";
         }
     };
 
     private final Operation.Variables variables;
 
-    public EmployeesQuery() {
+    public EmployeeQueries() {
         this.variables = Operation.EMPTY_VARIABLES;
     }
 
@@ -61,7 +61,7 @@ public final class EmployeesQuery implements Query<EmployeesQuery.Data, Employee
     }
 
     @Override
-    public EmployeesQuery.Data wrapData(EmployeesQuery.Data data) {
+    public EmployeeQueries.Data wrapData(EmployeeQueries.Data data) {
         return data;
     }
 
@@ -71,7 +71,7 @@ public final class EmployeesQuery implements Query<EmployeesQuery.Data, Employee
     }
 
     @Override
-    public ResponseFieldMapper<EmployeesQuery.Data> responseFieldMapper() {
+    public ResponseFieldMapper<EmployeeQueries.Data> responseFieldMapper() {
         return new Data.Mapper();
     }
 
@@ -84,8 +84,8 @@ public final class EmployeesQuery implements Query<EmployeesQuery.Data, Employee
         Builder() {
         }
 
-        public EmployeesQuery build() {
-            return new EmployeesQuery();
+        public EmployeeQueries build() {
+            return new EmployeeQueries();
         }
     }
 
