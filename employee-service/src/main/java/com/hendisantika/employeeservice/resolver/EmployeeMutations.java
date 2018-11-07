@@ -2,7 +2,7 @@ package com.hendisantika.employeeservice.resolver;
 
 import com.coxautodev.graphql.tools.GraphQLMutationResolver;
 import com.hendisantika.employeeservice.model.Employee;
-import com.hendisantika.employeeservice.model.EmployeeQueries;
+import com.hendisantika.employeeservice.model.EmployeeQuery;
 import com.hendisantika.employeeservice.repository.EmployeeRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,7 +22,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class EmployeeMutations implements GraphQLMutationResolver {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(EmployeeQueries.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(EmployeeQuery.class);
 
     @Autowired
     EmployeeRepository repository;

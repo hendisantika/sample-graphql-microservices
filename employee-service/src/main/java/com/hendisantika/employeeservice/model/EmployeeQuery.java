@@ -20,8 +20,8 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 @Generated("Apollo GraphQL")
-public final class EmployeeQueries implements Query<EmployeeQueries.Data, EmployeeQueries.Data, Operation.Variables> {
-    public static final String OPERATION_DEFINITION = "query EmployeeQueries {\n"
+public final class EmployeeQuery implements Query<EmployeeQuery.Data, EmployeeQuery.Data, Operation.Variables> {
+    public static final String OPERATION_DEFINITION = "query EmployeeQuery {\n"
             + "  employees {\n"
             + "    __typename\n"
             + "    name\n"
@@ -36,13 +36,13 @@ public final class EmployeeQueries implements Query<EmployeeQueries.Data, Employ
     public static final OperationName OPERATION_NAME = new OperationName() {
         @Override
         public String name() {
-            return "EmployeeQueries";
+            return "EmployeeQuery";
         }
     };
 
     private final Operation.Variables variables;
 
-    public EmployeeQueries() {
+    public EmployeeQuery() {
         this.variables = Operation.EMPTY_VARIABLES;
     }
 
@@ -61,7 +61,7 @@ public final class EmployeeQueries implements Query<EmployeeQueries.Data, Employ
     }
 
     @Override
-    public EmployeeQueries.Data wrapData(EmployeeQueries.Data data) {
+    public EmployeeQuery.Data wrapData(EmployeeQuery.Data data) {
         return data;
     }
 
@@ -71,7 +71,7 @@ public final class EmployeeQueries implements Query<EmployeeQueries.Data, Employ
     }
 
     @Override
-    public ResponseFieldMapper<EmployeeQueries.Data> responseFieldMapper() {
+    public ResponseFieldMapper<EmployeeQuery.Data> responseFieldMapper() {
         return new Data.Mapper();
     }
 
@@ -84,8 +84,8 @@ public final class EmployeeQueries implements Query<EmployeeQueries.Data, Employ
         Builder() {
         }
 
-        public EmployeeQueries build() {
-            return new EmployeeQueries();
+        public EmployeeQuery build() {
+            return new EmployeeQuery();
         }
     }
 
