@@ -1,12 +1,15 @@
 package com.hendisantika.organizationservice.resolver;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
+import com.hendisantika.organizationservice.client.EmployeeClient;
 import com.hendisantika.organizationservice.model.Organization;
 import com.hendisantika.organizationservice.repository.OrganizationRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
@@ -34,7 +37,7 @@ public class OrganizationQueries implements GraphQLQueryResolver {
         return repository.findAll();
     }
 
-    public Organization organizationByIdWithEmployees(Long id) {
+    public Organization organizationByIdWithEmployees(Long id) throws InterruptedException {
         LOGGER.info("Organizations find: id={}", id);
         Organization organization = repository.findById(id);
         organization.setEmployees(employeeClient.findByOrganization(id));
